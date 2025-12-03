@@ -1,24 +1,27 @@
-package br.com.api.to_do_list.model;
+package br.com.api.to_do_list.dto;
 
-import java.io.ObjectInputFilter.Status;
 import java.time.LocalDateTime;
 
 import br.com.api.to_do_list.enums.Priority;
-import jakarta.persistence.Entity;
+import br.com.api.to_do_list.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TaskEntity {
+public class TaskResponse {
 
     private Long id;
+
     private String title;
+
     private String description;
-    private Status status;
+
     private Priority priority;
+
+    private Status status;
+    
     private LocalDateTime createdAt;
 }
