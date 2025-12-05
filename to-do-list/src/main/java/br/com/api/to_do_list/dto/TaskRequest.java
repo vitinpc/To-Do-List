@@ -1,6 +1,6 @@
 package br.com.api.to_do_list.dto;
 
-import jakarta.annotation.Priority;
+import br.com.api.to_do_list.enums.Priority;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

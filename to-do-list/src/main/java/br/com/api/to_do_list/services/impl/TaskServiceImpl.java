@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import br.com.api.to_do_list.dto.TaskRequest;
 import br.com.api.to_do_list.dto.TaskResponse;
@@ -58,6 +59,7 @@ public class TaskServiceImpl implements TaskService {
             return response;
         }).toList();
 
+        return responses;
     }
 
     @Override
